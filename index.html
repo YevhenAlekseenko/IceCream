@@ -18,29 +18,55 @@
 
     <!-- Hero header -->
 
-    <header class="header">
-        <div class="header container">
-            <a href="./index.html" class="header__logo"><img src="./images/logo 1.png" alt="logo"></a>
-            <nav class="header-menu menu">
-                <ul class="header-menu__list">
-                    <li class="header-menu__item"> <a href="" class="header-menu__link">Home</a></li>
-                    <li class="header-menu__item"> <a href="" class="header-menu__link">About us</a></li>
-                    <li class="header-menu__item"> <a href="" class="header-menu__link">How it’s made?</a></li>
-                    <li class="header-menu__item"> <a href="" class="header-menu__link">Our products</a></li>
-                    <li class="header-menu__item"> <a href="" class="header-menu__link">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-button">
-                <button class="header__button btn" type="button">Buy now<i class="check"></i></button>
-            </div>
+<div class="wrapper"> 
+       <header class="header">
+    <div class="header container">
+        <a href="./index.html" class="header__logo"><img src="./images/logo.png" alt="Логотип"></a>
+        <nav class="header-menu menu">
+        
+          <ul class="header-menu__list">
+            <li class="header-menu__item"> <a href="" class="header-menu__link">Home</a></li>
+            <li class="header-menu__item"> <a href="" class="header-menu__link">About us</a></li>
+            <li class="header-menu__item"> <a href="" class="header-menu__link">How it’s made?</a></li>
+            <li class="header-menu__item"> <a href="" class="header-menu__link">Our products</a></li>
+            <li class="header-menu__item"> <a href="" class="header-menu__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-button">
+            <button class="header__button btn" type="button">Buy now<i class="check"></i></button>
         </div>
+    </div>
+</div>
+
+        <!-- Mobile menu  -->
+
+        <button class="burger-button is-open" data-menu-button type="button" aria-expanded="false"
+            aria-controls="mobile-menu">
+            <svg width="20" height="12" aria-label="Переключатель мобильного меню">
+                <use class="menu-icon__burger" href="./images/icons.svg#icon-burger"></use>
+            </svg>
+            <svg width="14" height="14" aria-label="Переключатель мобильного меню">
+                <use class="menu-icon__close" href="./images/icons.svg#icon-close"></use>
+            </svg>
+
+        </button>
+        <div class="modile-menu" id="mobile-menu" data-menu>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"> <a href="" class="mobile-menu__link">Home</a></li>
+                <li class="mobile-menu__item"> <a href="" class="mobile-menu__link">About us</a></li>
+                <li class="mobile-menu__item"> <a href="" class="mobile-menu__link">How it’s made?</a></li>
+                <li class="mobile-menu__item"> <a href="" class="mobile-menu__link">Our products</a></li>
+                <li class="mobile-menu__item"> <a href="" class="mobile-menu__link">Contact</a></li>
+            </ul>
+        </div>
+
     </header>
     <main>
         <section class="hero">
 
         </section>
     </main>
-
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

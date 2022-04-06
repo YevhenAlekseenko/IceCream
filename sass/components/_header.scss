@@ -5,6 +5,10 @@
 
 .header-menu {
     margin-left: 175px;
+
+    @media screen and (max-width: 1280px) {
+        display: none;
+    }
 }
 
 .header__logo {
@@ -40,6 +44,8 @@
 }
 
 .header__button {
+    width: 100%;
+    height: 44px;
     font-family: sans-serif;
     font-weight: 700;
     font-size: 16px;
